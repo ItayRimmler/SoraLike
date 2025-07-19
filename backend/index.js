@@ -5,7 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const length = 3;
 const words = ["fire", "water", "earth", "air", "light", "darkness", "human", "animal", "machine", "nature", "magic", "technology", "mosnter", "hero", "villain", "quest", "adventure", "battle", "peace", "war", "love", "hate", "friendship", "betrayal", "courage", "fear", "wisdom", "knowledge"];
