@@ -52,11 +52,11 @@ function App() {
     const overlayTimeout = setTimeout(() => setShowOverlay(true), 500);
 
     try {
-      const response = await fetch('/api/generate');
+      const response = await fetch(`${process.env.REACT_APP_API_BASE || '/api/generate'}`);
       const text = await response.text();
 
       if (text === 'okay') {
-        const urlsRes = await fetch('/urls/urls.json');
+        const urlsRes = await fetch(`${process.env.REACT_APP_API_BASE || ''}/urls/urls.json`);
         const data = await urlsRes.json();
         setUrls(data);
         setRepeatCount(1);
