@@ -16,7 +16,7 @@ This is the submission for the **Frontend Developer Interview Task** for [AdGPT.
 ### 2. Prompt-to-Image Generation
 - Input field for prompts (ChatGPT-style)
 - Selectable aspect ratio before generation
-- Integration with OpenAI's DALL·E API (or mocked)
+- Integration with Fal-AI API (or mocked)
 - Render generated images in the selected format
 
 ### 3. Video Handling
